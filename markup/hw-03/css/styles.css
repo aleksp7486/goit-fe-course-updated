@@ -89,9 +89,11 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
+/* flex-wrap */
 .nav {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -117,8 +119,6 @@ img {
 
 .nav__list {
   display: flex;
-  flex-wrap: wrap;
-  row-gap: 4px;
   letter-spacing: 0.02em;
 }
 
@@ -144,8 +144,6 @@ img {
 
 .contacts__list {
   display: flex;
-  flex-wrap: wrap;
-  row-gap: 4px;
 }
 
 .contacts-header .contacts__items:not(:last-child) {
