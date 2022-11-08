@@ -156,9 +156,10 @@ img {
   fill: var(--accent-color);
 }
 
-.icon-contacts {
+.contacts-icon {
   display: inline-block;
   margin-right: 10px;
+  --color: currentColor;
 }
 
 /* Banner */
@@ -366,12 +367,12 @@ img {
   background-color: var(--accent-color);
 }
 
-.social__link:hover .social__svg {
-  fill: var(--tertiary-color);
+.social__link:hover .social-icon {
+  --color: var(--tertiary-color);
 }
 
-.social__svg {
-  fill: var(--social-color);
+.social-icon {
+  --color: var(--social-color);
 }
 
 /* Customers */
@@ -396,23 +397,23 @@ img {
   align-items: center;
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--social-color);
   border-radius: 4px;
 }
 
 .customers__link:hover,
 .customers__link:focus {
   border: 1px solid var(--accent-color);
-  fill: var(--accent-color);
+  --color: var(--accent-color);
 }
 
 .customers__svg {
-  fill: #afb1b8;
+  --color: var(--social-color);
 }
 
 .customers__link:hover .customers__svg,
 .customers__link:focus .customers__svg {
-  fill: var(--accent-color);
+  --color: var(--accent-color);
 }
 
 /* Filters */
