@@ -68,6 +68,7 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
+  letter-spacing: 0.06em;
   background-color: var(--light-bg-color);
   border-radius: 4px;
   cursor: pointer;
@@ -260,10 +261,11 @@ img {
 }
 
 .modal {
+  position: relative;
   margin: auto;
-  padding: 8px;
+  padding: 40px;
   width: 528px;
-  height: 580px;
+  /* height: 580px; */
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -279,23 +281,137 @@ img {
 }
 
 .is-hidden .modal {
-  transform: scale(0);
+  transform: scale(0.8);
 }
 
 .modal__btn-close {
-  margin-left: auto;
+  position: absolute;
+  top: 8px;
+  right: 8px;
   display: flex;
   width: 30px;
   height: 30px;
   padding: 0;
+  color: #000;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
 }
+
+.modal__btn-close:hover {
+  color: var(--accent-color);
+}
+
 .btn-close-icon {
   margin: auto;
-  --color: #000;
+  --color: currentColor;
+}
+
+.modal__title {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Form */
+
+.form__form {
+}
+
+.form-field {
+  position: relative;
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 4px;
+  text-align: left;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+}
+
+.form__input {
+  /* display: block; */
+  width: 100%;
+  height: 40px;
+  padding-left: 34px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form__input::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form__input:focus {
+  outline: 1px solid var(--accent-color);
+}
+
+.form__input:focus + .form__icon {
+  --color: var(--accent-color);
+}
+
+.form__icon {
+  position: absolute;
+  top: 32px;
+  left: 12px;
+  --color: currentColor;
+}
+
+.form__textarea {
+  padding: 12px;
+  height: 120px;
+  margin-bottom: 20px;
+  resize: none;
+}
+
+.form-field-check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.form__check-label {
+  line-height: 1.8;
+}
+
+.form__check {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  background-image: url(../images/form/checkbox.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.form__check:checked {
+  background-image: url(../images/form/checked.svg);
+}
+
+.hidden {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.form__link {
+  color: var(--accent-color);
+}
+
+.form__btn-submit {
+  background-color: var(--accent-color);
+  color: var(--tertiary-color);
+}
+
+.form__btn-submit:hover,
+.form__btn-submit:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Main */
@@ -641,9 +757,15 @@ img {
   display: flex;
 }
 
+.footer__items:last-child {
+  flex-grow: 1;
+}
+
 .footer__items:not(:last-child) {
   margin-right: 70px;
 }
+
+/* Footer info */
 
 .logo-footer {
   color: var(--tertiary-color);
@@ -667,11 +789,13 @@ img {
   margin-bottom: 10px;
 }
 
+/* Footer social */
+
 .footer-social {
-  padding-top: 12px;
+  padding-top: 14px;
 }
 
-.footer-social__title {
+.footer__title {
   margin-bottom: 20px;
   color: var(--tertiary-color);
   font-size: 14px;
@@ -682,4 +806,51 @@ img {
 
 .social__link--footer {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Subscribe */
+
+.subscribe {
+  padding-top: 14px;
+}
+
+.subscribe-field {
+  display: flex;
+}
+
+.subscribe__input {
+  display: inline-block;
+  background-color: inherit;
+  height: 50px;
+  flex-grow: 1;
+  margin-right: 12px;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  outline: none;
+}
+
+.subscribe__input:focus {
+  border-color: var(--accent-color);
+}
+
+.subscribe__btn {
+  display: inline-flex;
+  align-items: center;
+  height: 50px;
+  background-color: var(--accent-color);
+  color: var(--tertiary-color);
+}
+
+.subscribe__btn:hover,
+.subscribe__btn:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.subscribe-btn-icon {
+  margin-left: 10px;
+  --color: var(--tertiary-color);
 }

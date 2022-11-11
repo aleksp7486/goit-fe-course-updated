@@ -41,14 +41,14 @@
               <li class="contacts__items">
                 <a href="mailto:info@devstudio.com" class="contacts__link mail"
                   ><svg class="contacts-icon" width="16" height="12">
-                    <use href="images/sprite.svg#mail"></use></svg
+                    <use href="images/icon.svg#mail"></use></svg
                   >info@devstudio.com</a
                 >
               </li>
               <li class="contacts__items">
                 <a href="tel:+380961111111" class="contacts__link tell"
                   ><svg class="contacts-icon" width="10" height="16">
-                    <use href="images/sprite.svg#tel"></use></svg
+                    <use href="images/icon.svg#tel"></use></svg
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -67,14 +67,79 @@
         </button>
 
         <!-- Modal -->
-
         <div class="modal-backdrop is-hidden" data-modal>
           <div class="modal">
             <button class="modal__btn-close" data-modal-close>
               <svg class="btn-close-icon" width="11" height="11">
-                <use href="images/sprite.svg#close"></use>
+                <use href="images/icon.svg#form-close"></use>
               </svg>
             </button>
+            <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
+            <form action="#" method="POST" class="form">
+              <div class="form-field">
+                <label class="form__label" for="name">Ім'я</label
+                ><input
+                  class="form__input input-name"
+                  type="text"
+                  name="name"
+                  id="name"
+                />
+                <svg class="form__icon" width="13" height="13">
+                  <use href="images/icon.svg#form-person"></use>
+                </svg>
+              </div>
+              <div class="form-field">
+                <label class="form__label" for="phone">Телефон</label
+                ><input
+                  class="form__input input-tel"
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                />
+                <svg class="form__icon" width="15" height="12">
+                  <use href="images/icon.svg#form-phone"></use>
+                </svg>
+              </div>
+              <div class="form-field">
+                <label class="form__label" for="mail">Пошта</label
+                ><input
+                  class="form__input input-mail"
+                  type="mail"
+                  name="mail"
+                  id="mail"
+                />
+                <svg class="form__icon" width="17" height="14">
+                  <use href="images/icon.svg#form-email"></use>
+                </svg>
+              </div>
+              <div class="form-field">
+                <label class="form__label" for="comment">Коментар</label>
+                <textarea
+                  class="form__input form__textarea"
+                  name="comment"
+                  id="comment"
+                  placeholder="Введіть текст"
+                ></textarea>
+              </div>
+
+              <div class="form-field-check">
+                <input
+                  class="form__check hidden"
+                  type="checkbox"
+                  name="agreement"
+                  value="agree"
+                  id="agreement"
+                />
+                <label class="form__check-label" for="agreement"
+                  ><span>Погоджуюся з розсилкою та приймаю</span>
+                  <a class="form__link" href="#">Умови договору</a></label
+                >
+              </div>
+
+              <button class="form__btn-submit btn" type="submit">
+                Відправити
+              </button>
+            </form>
           </div>
         </div>
       </section>
@@ -186,7 +251,7 @@
                         <li class="social__items">
                           <a href="#" class="social__link"
                             ><svg class="social-icon" width="20" height="20">
-                              <use href="images/sprite.svg#instagram"></use>
+                              <use href="images/icon.svg#instagram"></use>
                             </svg>
                             <span class="visually-hidden">instagram</span>
                           </a>
@@ -194,7 +259,7 @@
                         <li class="social__items">
                           <a href="#" class="social__link"
                             ><svg class="social-icon" width="20" height="20">
-                              <use href="images/sprite.svg#twitter"></use>
+                              <use href="images/icon.svg#twitter"></use>
                             </svg>
                             <span class="visually-hidden">twitter</span>
                           </a>
@@ -202,7 +267,7 @@
                         <li class="social__items">
                           <a href="#" class="social__link"
                             ><svg class="social-icon" width="20" height="20">
-                              <use href="images/sprite.svg#facebook"></use>
+                              <use href="images/icon.svg#facebook"></use>
                             </svg>
                             <span class="visually-hidden">facebook</span>
                           </a>
@@ -210,7 +275,7 @@
                         <li class="social__items">
                           <a href="#" class="social__link"
                             ><svg class="social-icon" width="20" height="20">
-                              <use href="images/sprite.svg#linkedin"></use>
+                              <use href="images/icon.svg#linkedin"></use>
                             </svg>
                             <span class="visually-hidden">linkedin</span>
                           </a>
@@ -240,7 +305,7 @@
                         <li class="social__items">
                           <a href="#" class="social__link"
                             ><svg class="social-icon" width="20" height="20">
-                              <use href="images/sprite.svg#instagram"></use>
+                              <use href="images/icon.svg#instagram"></use>
                             </svg>
                             <span class="visually-hidden">instagram</span>
                           </a>
@@ -248,7 +313,7 @@
                         <li class="social__items">
                           <a href="#" class="social__link"
                             ><svg class="social-icon" width="20" height="20">
-                              <use href="images/sprite.svg#twitter"></use>
+                              <use href="images/icon.svg#twitter"></use>
                             </svg>
                             <span class="visually-hidden">twitter</span>
                           </a>
@@ -256,7 +321,7 @@
                         <li class="social__items">
                           <a href="#" class="social__link"
                             ><svg class="social-icon" width="20" height="20">
-                              <use href="images/sprite.svg#facebook"></use>
+                              <use href="images/icon.svg#facebook"></use>
                             </svg>
                             <span class="visually-hidden">facebook</span>
                           </a>
@@ -264,7 +329,7 @@
                         <li class="social__items">
                           <a href="#" class="social__link"
                             ><svg class="social-icon" width="20" height="20">
-                              <use href="images/sprite.svg#linkedin"></use>
+                              <use href="images/icon.svg#linkedin"></use>
                             </svg>
                             <span class="visually-hidden">linkedin</span>
                           </a>
@@ -292,7 +357,7 @@
                         <li class="social__items">
                           <a href="#" class="social__link"
                             ><svg class="social-icon" width="20" height="20">
-                              <use href="images/sprite.svg#instagram"></use>
+                              <use href="images/icon.svg#instagram"></use>
                             </svg>
                             <span class="visually-hidden">instagram</span>
                           </a>
@@ -300,7 +365,7 @@
                         <li class="social__items">
                           <a href="#" class="social__link"
                             ><svg class="social-icon" width="20" height="20">
-                              <use href="images/sprite.svg#twitter"></use>
+                              <use href="images/icon.svg#twitter"></use>
                             </svg>
                             <span class="visually-hidden">twitter</span>
                           </a>
@@ -308,7 +373,7 @@
                         <li class="social__items">
                           <a href="#" class="social__link"
                             ><svg class="social-icon" width="20" height="20">
-                              <use href="images/sprite.svg#facebook"></use>
+                              <use href="images/icon.svg#facebook"></use>
                             </svg>
                             <span class="visually-hidden">facebook</span>
                           </a>
@@ -316,7 +381,7 @@
                         <li class="social__items">
                           <a href="#" class="social__link"
                             ><svg class="social-icon" width="20" height="20">
-                              <use href="images/sprite.svg#linkedin"></use>
+                              <use href="images/icon.svg#linkedin"></use>
                             </svg>
                             <span class="visually-hidden">linkedin</span>
                           </a>
@@ -344,7 +409,7 @@
                         <li class="social__items">
                           <a href="#" class="social__link"
                             ><svg class="social-icon" width="20" height="20">
-                              <use href="images/sprite.svg#instagram"></use>
+                              <use href="images/icon.svg#instagram"></use>
                             </svg>
                             <span class="visually-hidden">instagram</span>
                           </a>
@@ -352,7 +417,7 @@
                         <li class="social__items">
                           <a href="#" class="social__link"
                             ><svg class="social-icon" width="20" height="20">
-                              <use href="images/sprite.svg#twitter"></use>
+                              <use href="images/icon.svg#twitter"></use>
                             </svg>
                             <span class="visually-hidden">twitter</span>
                           </a>
@@ -360,7 +425,7 @@
                         <li class="social__items">
                           <a href="#" class="social__link"
                             ><svg class="social-icon" width="20" height="20">
-                              <use href="images/sprite.svg#facebook"></use>
+                              <use href="images/icon.svg#facebook"></use>
                             </svg>
                             <span class="visually-hidden">facebook</span>
                           </a>
@@ -368,7 +433,7 @@
                         <li class="social__items">
                           <a href="#" class="social__link"
                             ><svg class="social-icon" width="20" height="20">
-                              <use href="images/sprite.svg#linkedin"></use>
+                              <use href="images/icon.svg#linkedin"></use>
                             </svg>
                             <span class="visually-hidden">linkedin</span>
                           </a>
@@ -390,42 +455,42 @@
               <a href="#" class="customers__link"
                 ><span class="visually-hidden">client1</span>
                 <svg class="customers__svg" width="106" height="60">
-                  <use href="images/sprite.svg#client1"></use></svg
+                  <use href="images/icon.svg#client1"></use></svg
               ></a>
             </li>
             <li class="customers__items">
               <a href="#" class="customers__link"
                 ><span class="visually-hidden">client2</span
                 ><svg class="customers__svg" width="106" height="60">
-                  <use href="images/sprite.svg#client2"></use></svg
+                  <use href="images/icon.svg#client2"></use></svg
               ></a>
             </li>
             <li class="customers__items">
               <a href="#" class="customers__link"
                 ><span class="visually-hidden">client3</span
                 ><svg class="customers__svg" width="106" height="60">
-                  <use href="images/sprite.svg#client3"></use></svg
+                  <use href="images/icon.svg#client3"></use></svg
               ></a>
             </li>
             <li class="customers__items">
               <a href="#" class="customers__link"
                 ><span class="visually-hidden">client4</span
                 ><svg class="customers__svg" width="106" height="60">
-                  <use href="images/sprite.svg#client4"></use></svg
+                  <use href="images/icon.svg#client4"></use></svg
               ></a>
             </li>
             <li class="customers__items">
               <a href="#" class="customers__link"
                 ><span class="visually-hidden">client5</span
                 ><svg class="customers__svg" width="106" height="60">
-                  <use href="images/sprite.svg#client5"></use></svg
+                  <use href="images/icon.svg#client5"></use></svg
               ></a>
             </li>
             <li class="customers__items">
               <a href="#" class="customers__link"
                 ><span class="visually-hidden">client6</span
                 ><svg class="customers__svg" width="106" height="60">
-                  <use href="images/sprite.svg#client6"></use></svg
+                  <use href="images/icon.svg#client6"></use></svg
               ></a>
             </li>
           </ul>
@@ -437,6 +502,7 @@
       <div class="container">
         <ul class="footer__list">
           <li class="footer__items">
+            <!-- Footer info -->
             <div class="footer-info">
               <a href="#" class="logo logo-footer" lang="en"
                 ><span lang="en">Web</span>Studio</a
@@ -459,14 +525,15 @@
             </div>
           </li>
           <li class="footer__items">
+            <!-- Footer social -->
             <div class="footer-social">
-              <h2 class="footer-social__title">приєднуйтесь</h2>
+              <h2 class="footer__title">приєднуйтесь</h2>
               <div class="social">
                 <ul class="social__list">
                   <li class="social__items">
                     <a href="#" class="social__link social__link--footer"
                       ><svg class="social-icon" width="20" height="20">
-                        <use href="images/sprite.svg#instagram"></use>
+                        <use href="images/icon.svg#instagram"></use>
                       </svg>
                       <span class="visually-hidden">instagram</span>
                     </a>
@@ -474,7 +541,7 @@
                   <li class="social__items">
                     <a href="#" class="social__link social__link--footer"
                       ><svg class="social-icon" width="20" height="20">
-                        <use href="images/sprite.svg#twitter"></use>
+                        <use href="images/icon.svg#twitter"></use>
                       </svg>
                       <span class="visually-hidden">twitter</span>
                     </a>
@@ -482,7 +549,7 @@
                   <li class="social__items">
                     <a href="#" class="social__link social__link--footer"
                       ><svg class="social-icon" width="20" height="20">
-                        <use href="images/sprite.svg#facebook"></use>
+                        <use href="images/icon.svg#facebook"></use>
                       </svg>
                       <span class="visually-hidden">facebook</span>
                     </a>
@@ -490,12 +557,30 @@
                   <li class="social__items">
                     <a href="#" class="social__link social__link--footer"
                       ><svg class="social-icon" width="20" height="20">
-                        <use href="images/sprite.svg#linkedin"></use>
+                        <use href="images/icon.svg#linkedin"></use>
                       </svg>
                       <span class="visually-hidden">linkedin</span>
                     </a>
                   </li>
                 </ul>
+              </div>
+            </div>
+          </li>
+          <li class="footer__items">
+            <!-- Footer subscribe -->
+            <div class="subscribe">
+              <h2 class="footer__title">Підпишіться на розсилку</h2>
+              <div class="subscribe-field">
+                <input class="subscribe__input" type="mail" name="subscribe" />
+                <button type="submit" class="subscribe__btn btn">
+                  Підписатися<svg
+                    class="subscribe-btn-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="images/icon.svg#send"></use>
+                  </svg>
+                </button>
               </div>
             </div>
           </li>
