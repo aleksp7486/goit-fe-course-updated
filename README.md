@@ -1,1 +1,1 @@
-# goit-fe-course-updated-
+# goit-fe-course-updated-homework
