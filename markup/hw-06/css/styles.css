@@ -184,7 +184,8 @@ img {
 }
 
 .contacts__link {
-  display: block;
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
   color: inherit;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -336,10 +337,9 @@ img {
 }
 
 .form__input {
-  /* display: block; */
   width: 100%;
   height: 40px;
-  padding-left: 34px;
+  padding-left: 48px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
@@ -358,13 +358,14 @@ img {
 
 .form__icon {
   position: absolute;
-  top: 32px;
-  left: 12px;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
   --color: currentColor;
 }
 
 .form__textarea {
-  padding: 12px;
+  padding: 15px;
   height: 120px;
   margin-bottom: 20px;
   resize: none;
