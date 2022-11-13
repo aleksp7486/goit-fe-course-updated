@@ -1,0 +1,34 @@
+// .occupation {
+// }
+
+.occupation__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.occupation__items {
+}
+
+.occupation__link {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+// .occupation__image {
+// }
+
+.occupation__description {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  font-weight: 700;
+  line-height: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $tertiary-color;
+  background: rgba(47, 48, 58, 0.8);
+}

@@ -1,0 +1,18 @@
+.logo {
+  display: block;
+  font-family: $raleway;
+  color: $primary-color;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  animation: logoScale 1s linear;
+}
+
+.logo-header {
+  margin-right: 92px;
+}
+
+.logo span {
+  color: $accent-color;
+}

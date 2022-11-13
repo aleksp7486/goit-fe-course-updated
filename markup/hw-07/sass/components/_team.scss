@@ -1,0 +1,17 @@
+.team {
+  background-color: $light-bg-color;
+}
+
+.team__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+// .team__items {
+// }
+
+.team__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
