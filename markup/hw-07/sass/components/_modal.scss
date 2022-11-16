@@ -32,7 +32,7 @@
   transform: scale(0.8);
 }
 
-.modal__btn-close {
+.modal__btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -50,7 +50,7 @@
   }
 }
 
-.btn-close-icon {
+.modal__btn-icon {
   margin: auto;
   --color: currentColor;
 }
