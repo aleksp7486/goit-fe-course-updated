@@ -11,8 +11,10 @@
   display: flex;
 }
 
-.contacts-header .contacts__items:not(:last-child) {
-  margin-right: 50px;
+.contacts-header {
+  .contacts__items:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .contacts__link {
@@ -27,7 +29,7 @@
   }
 }
 
-.contacts__icon {
+.contacts-icon {
   display: inline-block;
   margin-right: 10px;
   --color: currentColor;

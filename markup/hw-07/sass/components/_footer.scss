@@ -34,12 +34,16 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer__contacts .contacts__list {
-  flex-direction: column;
+.footer__contacts {
+  .contacts__list {
+    flex-direction: column;
+  }
 }
 
-.footer__contacts .contacts__items:not(:last-child) {
-  margin-bottom: 10px;
+.footer__contacts {
+  .contacts__items:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 /* Footer social */

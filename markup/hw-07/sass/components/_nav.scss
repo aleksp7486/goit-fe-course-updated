@@ -9,8 +9,10 @@
   letter-spacing: 0.02em;
 }
 
-.nav__items:not(:last-child) {
-  margin-right: 50px;
+.nav__items {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .nav__link {
@@ -41,6 +43,8 @@
   color: $accent-color;
 }
 
-.active.nav__link::before {
-  display: block;
+.active.nav__link {
+  ::before {
+    display: block;
+  }
 }
