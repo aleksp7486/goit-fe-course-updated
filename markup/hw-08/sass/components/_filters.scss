@@ -4,13 +4,16 @@
 
 .filters__list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 8px;
+  row-gap: 15px;
+  @media (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .filters__items {
-  &:not(:last-child) {
-    margin-right: 8px;
-  }
 }
 
 .filters__btn {

@@ -2,14 +2,21 @@
 // }
 
 .projects__list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px;
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-// .projects__items {
-// }
+.projects__items {
+  @media (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+}
 
 .projects__link {
   display: block;
