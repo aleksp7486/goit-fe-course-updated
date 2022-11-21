@@ -11,9 +11,11 @@
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
     if (refs.modal.classList.contains('is-hidden')) {
+      bodyScrollLock.enableBodyScroll(refs.modal);
       refs.modal.removeEventListener('click', onBackdropClick);
       return;
     }
+    bodyScrollLock.disableBodyScroll(refs.modal);
     refs.modal.addEventListener('click', onBackdropClick);
   }
 

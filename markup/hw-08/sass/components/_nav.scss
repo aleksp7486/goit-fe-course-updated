@@ -51,10 +51,7 @@
 
 .active.nav__link {
   color: $accent-color;
-}
-
-.active.nav__link {
-  ::before {
+  &::before {
     display: block;
   }
 }
