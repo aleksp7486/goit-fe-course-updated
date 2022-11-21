@@ -1,0 +1,11 @@
+.page-title {
+  margin-bottom: 40px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.4;
+  color: $tertiary-color;
+  letter-spacing: 0.06em;
+  @media (min-width: 1199px) {
+    font-size: 44px;
+  }
+}

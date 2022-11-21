@@ -1,0 +1,19 @@
+.banner {
+  display: flex;
+  max-width: 1600px;
+  width: 100%;
+  min-height: 400px;
+  margin: 0 auto;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/banner_s.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (min-width: 1199px) {
+    min-height: 600px;
+  }
+}

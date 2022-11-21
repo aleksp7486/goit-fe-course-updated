@@ -1,0 +1,17 @@
+.hero {
+  max-width: 360px;
+  margin: auto;
+  text-align: center;
+  @media (min-width: 1199px) {
+    max-width: 696px;
+  }
+}
+
+.hero__btn {
+  background-color: $accent-color;
+  color: $tertiary-color;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}

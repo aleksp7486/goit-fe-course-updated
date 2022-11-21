@@ -1,0 +1,18 @@
+// .projects {
+// }
+
+.projects__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+// .projects__items {
+// }
+
+.projects__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}

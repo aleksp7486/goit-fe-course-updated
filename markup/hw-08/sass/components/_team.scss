@@ -1,0 +1,25 @@
+.team {
+  background-color: $light-bg-color;
+}
+
+.team__list {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.team__items {
+  &:not(:last-child) {
+    @media (max-width: 768px) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.team__link {
+  // display: block;
+  text-decoration: none;
+  color: inherit;
+}

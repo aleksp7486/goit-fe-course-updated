@@ -1,0 +1,32 @@
+.employee {
+  display: flex;
+  flex-direction: column;
+  // flex-basis: 270px;
+  border: 1px solid #eeeeee;
+  text-align: center;
+  background: var(--tertiary-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.employee__image {
+  width: 100%;
+}
+
+.employee__cont {
+  padding: 30px 0;
+  flex-grow: 1;
+}
+
+.employee__name {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.employee__job-title {
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: $secondary-color;
+}
