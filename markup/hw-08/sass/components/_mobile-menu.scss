@@ -60,9 +60,6 @@
   letter-spacing: 0.02em;
 }
 
-// .mobile-menu__list {
-// }
-
 .mobile-menu__items {
   &:not(:last-child) {
     margin-bottom: 32px;
@@ -78,9 +75,6 @@
   }
 }
 
-// .active {
-// }
-
 .mobile-contacts {
   margin-bottom: 64px;
   font-weight: 500;
@@ -88,9 +82,6 @@
   letter-spacing: 0.02em;
   color: $secondary-color;
 }
-
-// .mobile-contacts__list {
-// }
 
 .mobile-contacts__items {
   &:not(:last-child) {
@@ -107,9 +98,6 @@
   font-size: 34px;
   color: $accent-color;
 }
-
-// .mobile-social {
-// }
 
 .mobile-social__list {
   display: flex;
