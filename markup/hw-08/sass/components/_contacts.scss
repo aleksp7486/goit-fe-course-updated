@@ -9,11 +9,23 @@
 
 .contacts__list {
   display: flex;
+  flex-direction: column;
+  @media (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+
+.contacts__items:not(:last-child) {
+  @media (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
 }
 
 .nav__contacts {
   .contacts__items:not(:last-child) {
-    margin-right: 50px;
+    @media (min-width: 1200px) {
+      margin-right: 50px;
+    }
   }
 }
 

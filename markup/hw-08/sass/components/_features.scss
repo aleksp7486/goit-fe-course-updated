@@ -1,5 +1,4 @@
 .features {
-  // padding-bottom: 0;
   text-align: center;
   @media (min-width: 768px) {
     text-align: left;
@@ -8,17 +7,22 @@
 
 .features__list {
   display: block;
-  flex-wrap: wrap;
+
   @media (min-width: 768px) {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 .features__items {
   &:not(:last-child) {
-    margin-bottom: 30px;
+    @media (max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
 
   @media (min-width: 768px) {
